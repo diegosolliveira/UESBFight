@@ -3,16 +3,22 @@ package modelo;
 public class Personagem {
 
 	public int altura = 334;
-	public int largura = 250;
-	public int x = 100;
-	public int y = 100;
-	public int gravidade = 1;
+	static int largura = 200;
+	public int x;
+	public int y;
+	public int gravidade = 7;
 	public int velocidade = 0;
-
-	public Personagem(int altura, int largura, int x, int y) {
+	public int alturaChao = 720-334;
+	public int pulo = 0;
+	public int forca = 50;
+	public int alturaMax = 1;
+	public int puchLargura = 150;
+	public int puchAltura = 150;
+	public boolean puch = false;
+	public int vidaTotal = 100;
+	public int vidaAtual = 100;
+	public Personagem(int x, int y) {
 		super();
-		this.altura = altura;
-		this.largura = largura;
 		this.x = x;
 		this.y = y;
 	}
